@@ -1,0 +1,27 @@
+:root {
+    /* Letter sizing */
+    height: 8.5in;
+    width: 11in;
+    /* Variables */
+    --main-width: 75%;
+    --header-height: 12.5%;
+    --sidebar-width: calc(100% - var(--main-width));
+}
+
+article>header:first-of-type {
+    height: var(--header-height);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: var(--sidebar-width);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: var(--main-width);
+}
